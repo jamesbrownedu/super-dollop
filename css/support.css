@@ -1,0 +1,313 @@
+/* Humbuger/clicker styles were removed from this build. */
+
+
+body.workspace-mode #bg-overlay,
+        body.support-mode #bg-overlay {
+            animation-play-state: paused;
+        }
+
+/* ===== SUPPORT SECTION STYLES ===== */
+        .support-workspace {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+body.support-mode .support-workspace {
+            display: flex;
+        }
+
+body.support-mode #launcher-strip,
+        body.support-mode #game-info,
+        body.support-mode #learning-pulse,
+        body.support-mode #wxter-workspace {
+            display: none !important;
+        }
+
+body.support-mode #screen-ide {
+            display: none !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+.support-shell {
+            width: 100%;
+            max-width: 640px;
+            border-radius: var(--radius-lg);
+            padding: 36px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+.support-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+.support-header-icon {
+            font-size: 28px;
+            color: var(--accent-neon);
+            filter: drop-shadow(0 0 10px var(--accent-glow));
+        }
+
+.support-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+.support-subtitle {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin: 2px 0 0;
+        }
+
+.support-form-body {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+.support-field {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+.support-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-secondary);
+        }
+
+.support-label-hint {
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0;
+            color: var(--text-tertiary);
+            font-size: 12px;
+        }
+
+.support-type-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+.support-type-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 14px 10px;
+            background: var(--bg-tile);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+.support-type-btn i { font-size: 18px; }
+
+.support-type-btn:hover {
+            background: var(--bg-tile-hover);
+            color: var(--text-primary);
+            border-color: var(--border-hi);
+        }
+
+.support-type-btn.active {
+            background: rgba(59,130,246,0.15);
+            border-color: var(--accent-neon);
+            color: #fff;
+            box-shadow: 0 0 18px var(--accent-glow);
+        }
+
+.support-tags-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+.support-tag-btn {
+            padding: 7px 14px;
+            background: var(--bg-tile);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+.support-tag-btn:hover {
+            background: var(--bg-tile-hover);
+            color: var(--text-primary);
+        }
+
+.support-tag-btn.active {
+            background: rgba(59,130,246,0.18);
+            border-color: var(--accent-neon);
+            color: #93c5fd;
+            box-shadow: 0 0 10px rgba(59,130,246,0.3);
+        }
+
+.support-textarea {
+            width: 100%;
+            min-height: 110px;
+            padding: 14px 16px;
+            background: var(--bg-tile);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+.support-textarea:focus {
+            border-color: var(--border-focus);
+        }
+
+.support-textarea::placeholder { color: var(--text-tertiary); }
+
+.support-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+.support-submit-btn { min-width: 160px; }
+
+.support-reports {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+.support-reports-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+.support-reports-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            max-height: 320px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+.support-reports-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+.support-reports-list::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.18);
+            border-radius: 999px;
+        }
+
+.support-report-card {
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.04);
+            border-radius: 18px;
+            padding: 16px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+.support-report-meta {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            color: rgba(255,255,255,0.6);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+.support-report-replies {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 2px;
+        }
+
+.support-report-reply {
+            border-radius: 14px;
+            padding: 10px 12px;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(96, 165, 250, 0.22);
+        }
+
+.support-empty-state {
+            border: 1px dashed rgba(255,255,255,0.12);
+            border-radius: 16px;
+            padding: 18px;
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 13px;
+        }
+
+.support-anon-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin: 0;
+        }
+
+/* Admin support tab styles */
+        .support-ticket-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 16px;
+            transition: background 0.2s;
+        }
+
+.support-ticket-card:hover { background: rgba(255,255,255,0.07); }
+
+.support-ticket-tag {
+            display: inline-block;
+            background: rgba(59,130,246,0.15);
+            color: #93c5fd;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 999px;
+            border: 1px solid rgba(59,130,246,0.3);
+        }
+
+.support-ticket-type {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 999px;
+            text-transform: capitalize;
+        }
+
+.support-ticket-type.bug { background: rgba(239,68,68,0.15); color: #fca5a5; border: 1px solid rgba(239,68,68,0.3); }
+
+.support-ticket-type.not-working { background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.3); }
+
+.support-ticket-type.suggestion { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.3); }
+
+.support-ticket-type.other { background: rgba(139,92,246,0.15); color: #c4b5fd; border: 1px solid rgba(139,92,246,0.3); }
