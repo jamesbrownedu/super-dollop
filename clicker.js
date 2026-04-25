@@ -1,0 +1,3 @@
+const ClickerState = {};
+
+function loadClickerState() {}
